@@ -23,15 +23,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: php 8.1
+      - name: php 8.4
         id: setup-php
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.1
+          php-version: 8.4
           tools: composer:v2.4.1
       - name: composer install
+        env:
+          COMPOSER_NO_DEV: 0
         run: |
-          composer install --dev
+          composer install
       - name: build
         run: |
           composer docs
