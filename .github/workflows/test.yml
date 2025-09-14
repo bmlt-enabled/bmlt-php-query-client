@@ -1,0 +1,26 @@
+name: test
+on:
+  push:
+    branches-ignore: ['main']
+
+jobs:
+  test-php:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+
+      - name: php 8.1
+        id: setup-php
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.1
+          tools: composer:v2.4.1
+
+      - name: composer install
+        run: |
+          composer install
+
+      - name: test
+        run: |
+          vendor/bin/phpunit

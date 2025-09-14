@@ -1,0 +1,52 @@
+{
+    "name": "bmlt-enabled/bmlt-php-query-client",
+    "description": "A PHP client for querying BMLT (Basic Meeting List Tool) servers with built-in geocoding support",
+    "type": "library",
+    "keywords": ["bmlt", "meetings", "recovery", "na", "geocoding", "api-client"],
+    "homepage": "https://github.com/bmlt-enabled/bmlt-php-query-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Joyce",
+            "email": "pjoyce@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8",
+        "psr/log": "^1.1|^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpdocumentor/phpdocumentor": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BmltEnabled\\BmltQueryClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BmltEnabled\\BmltQueryClient\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "php-cs-fixer": "php-cs-fixer fix",
+        "docs": "phpdoc run -d src -t docs/api"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor configVersion="3">
+    <title>BMLT PHP Query Client</title>
+    
+    <paths>
+        <output>docs/api</output>
+    </paths>
+    
+    <versions>
+        <version number="1.0.0">
+            <folder>src</folder>
+        </version>
+    </versions>
+</phpdocumentor>

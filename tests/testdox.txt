@@ -1,0 +1,32 @@
+Bmlt Client (BmltEnabled\BmltQueryClient\Tests\Unit\BmltClient)
+ [x] Client initialization
+ [x] Set user agent
+ [x] Set user agent validation
+ [x] Set user agent trims whitespace
+ [x] Set timeout
+ [x] Set timeout validation
+ [x] Set timeout zero validation
+ [x] Set root server url
+ [x] Set default format
+ [x] Geocoding disabled throws exception
+ [x] Reverse geocoding disabled throws exception
+ [x] Search meetings by address disabled throws exception
+
+Url Builder (BmltEnabled\BmltQueryClient\Tests\Unit\UrlBuilder)
+ [x] Build bmlt url
+ [x] Build bmlt url with jsonp format
+ [x] Validate root server url
+ [x] Validate root server url empty
+ [x] Validate root server url invalid
+ [x] Validate root server url invalid scheme
+ [x] Validate coordinates
+ [x] Validate coordinates invalid latitude
+ [x] Validate coordinates invalid longitude
+ [x] Validate radius
+ [x] Validate radius negative
+ [x] Validate radius zero
+ [x] Validate radius too large
+ [x] Normalize root server url
+ [x] Validate endpoint format
+ [x] Validate endpoint format invalid
+
