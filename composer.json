@@ -1,5 +1,6 @@
 {
     "name": "bmlt-enabled/bmlt-php-query-client",
+    "version": "1.0.0",
     "description": "A PHP client for querying BMLT (Basic Meeting List Tool) servers with built-in geocoding support",
     "type": "library",
     "keywords": ["bmlt", "meetings", "recovery", "na", "geocoding", "api-client"],
